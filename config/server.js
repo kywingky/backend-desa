@@ -1,5 +1,5 @@
 module.exports = ({ env }) => ({
   app: {
-    keys: env.array("APP_KEYS"),
+    keys: env("APP_KEYS").split(","),
   },
 });
